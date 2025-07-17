@@ -1,4 +1,4 @@
-# 🚖 Ola Booking Insights Dashboard & SQL Analysis
+# Ola Dashboard & SQL Analysis
 
 ## 1. Project Title / Headline
 An end-to-end data analytics project that explores ride booking performance for Ola in Bengaluru, India. Built with Power BI for visual analytics and SQL for backend querying, this project uncovers insights on ride volume, cancellations, customer behavior, and revenue trends for over 100,000 simulated bookings.
