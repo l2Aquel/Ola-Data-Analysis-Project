@@ -1,12 +1,12 @@
 # 🚖 Ola Booking Insights Dashboard & SQL Analysis
 
-## 1. Project Title / Headline
+##1. Project Title / Headline
 An end-to-end data analytics project that explores ride booking performance for Ola in Bengaluru, India. Built with Power BI for visual analytics and SQL for backend querying, this project uncovers insights on ride volume, cancellations, customer behavior, and revenue trends for over 100,000 simulated bookings.
 
-## 2. Short Description / Purpose
+##2. Short Description / Purpose
 The Ola Booking Insights Dashboard is a Power BI and SQL-based data analytics solution designed to simulate real-world booking operations for Ola Cabs. With over 1 lakh entries for the city of Bengaluru, the project uncovers patterns in ride performance, customer preferences, and operational gaps using SQL queries and dynamic visual dashboards.
 
-## 3. Tech Stack
+##3. Tech Stack
 This project leverages the following technologies:
 
 - 📊 **Power BI Desktop** – Primary visualization platform for dashboard development  
@@ -16,7 +16,7 @@ This project leverages the following technologies:
 - 🐘 **MySQL / SQL** – For running and creating views to extract analytical insights  
 - 📁 **File Types** – `.pbix`, `.sql`, `.pdf`
 
-## 4. Data Source
+##4. Data Source
 **Source**: Simulated data created using ChatGPT and Excel formulas based on realistic Ola ride patterns.  
 **City**: Bengaluru  
 **Period**: July 2024  
@@ -30,7 +30,7 @@ This project leverages the following technologies:
 - Cancellation Reasons (Customer/Driver)
 - Incomplete Ride Reasons
 
-## 5. Features / Highlights
+##5. Features / Highlights
 ### • Business Problem
 Ride-hailing companies like Ola deal with fluctuating ride demand, high cancellation rates, and the need to improve customer and driver experiences. Understanding operational KPIs such as successful bookings, average distance, cancellations, and top customers is essential for business performance and customer satisfaction.
 
@@ -73,11 +73,11 @@ Separate breakdown for customer and driver cancellation reasons.
 🔹 **Customer vs. Driver Ratings (Line Chart)**  
 Both ratings hover around 4.00 — consistent but slightly fluctuating.
 
-6. Screenshots / Demos
+##6. Screenshots / Demos
+https://github.com/l2Aquel/Ola-Data-Analysis-Project/blob/main/ola_preview.png
 
 
-
-### • SQL Logic & Insights
+##SQL Logic & Insights
 
 1. Retrieve all successful bookings
    create view successful_bookings as select * from bookings where Booking_Status = 'Success';
@@ -110,11 +110,11 @@ Both ratings hover around 4.00 — consistent but slightly fluctuating.
     create view incomplete_rides_reason as select  Booking_ID, Incomplete_Rides_Reason from bookings where Incomplete_Rides = 'Yes';
 
 
-## 📈 Business Impact & Insights
+## Business Impact & Insights
 
-- 🔍 **Insightful Cancellations**: Over 28% cancellations point to a need for improved driver allocation and user experience.
-- 💰 **Customer Loyalty**: Top 5 customers generated nearly ₹30K+ in value, showcasing strong power-user segments.
-- 📉 **Consistent Ratings**: Driver and customer ratings maintain a healthy average ~4.0, indicating moderate satisfaction levels.
-- 💸 **UPI Usage**: Digital payments like UPI dominate, offering scope for fintech tie-ups or rewards.
-- 📊 **Distance & Vehicle Match**: Strategic vehicle-type distribution by distance helps plan fleet allocation better.
+- **Insightful Cancellations**: Over 28% cancellations point to a need for improved driver allocation and user experience.
+- **Customer Loyalty**: Top 5 customers generated nearly ₹30K+ in value, showcasing strong power-user segments.
+- **Consistent Ratings**: Driver and customer ratings maintain a healthy average ~4.0, indicating moderate satisfaction levels.
+- **UPI Usage**: Digital payments like UPI dominate, offering scope for fintech tie-ups or rewards.
+- **Distance & Vehicle Match**: Strategic vehicle-type distribution by distance helps plan fleet allocation better.
     
