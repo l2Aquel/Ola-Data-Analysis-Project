@@ -47,30 +47,30 @@ To deliver an analytics solution that:
 
 ### • Walkthrough of Key Power BI Visuals
 
-🔹 **Booking Status Breakdown (Pie Chart)**  
+**Booking Status Breakdown (Pie Chart)**  
 - Success: 62.09%  
 - Cancelled by Driver: 17.89%  
 - Cancelled by Customer: 10.19%  
 - Driver Not Found: 9.83%
 
-🔹 **Ride Volume Over Time (Line Chart)**  
+**Ride Volume Over Time (Line Chart)**  
 Shows day-wise trends in booking volume across July 2024.
 
-🔹 **KPIs (Cards)**  
+**KPIs (Cards)**  
 - Total Bookings: 1,03,024  
 - Total Booking Value: ₹35 Million  
 - Cancellation Rate: 28.08%
 
-🔹 **Revenue by Payment Method (Bar Chart)**  
+**Revenue by Payment Method (Bar Chart)**  
 Cash, UPI, Credit Card, and Debit Card analyzed for booking value contribution.
 
-🔹 **Top 5 Customers (Table Visual)**  
+**Top 5 Customers (Table Visual)**  
 Displays high-spending customers and their booking value.
 
-🔹 **Cancelled Rides by Reason (Bar Charts)**  
+**Cancelled Rides by Reason (Bar Charts)**  
 Separate breakdown for customer and driver cancellation reasons.
 
-🔹 **Customer vs. Driver Ratings (Line Chart)**  
+**Customer vs. Driver Ratings (Line Chart)**  
 Both ratings hover around 4.00 — consistent but slightly fluctuating.
 
 ## 6. Screenshots / Demos
