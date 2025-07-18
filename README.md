@@ -74,7 +74,7 @@ Separate breakdown for customer and driver cancellation reasons.
 Both ratings hover around 4.00 — consistent but slightly fluctuating.
 
 ## 6. Screenshots / Demos
-https://github.com/l2Aquel/Ola-Data-Analysis-Project/blob/main/ola_preview.png
+![https://github.com/l2Aquel/Ola-Data-Analysis-Project/blob/main/ola_preview.png](ola_preview.png)
 
 
 ## SQL Logic & Insights
