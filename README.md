@@ -76,35 +76,86 @@ Both ratings hover around 4.00 — consistent but slightly fluctuating.
 ## SQL Logic & Insights
 
 1. Retrieve all successful bookings
-> create view successful_bookings as select * from bookings where Booking_Status = 'Success';
+```sql
+create view successful_bookings as
+select *
+from bookings
+where Booking_Status = 'Success';
+```
    
 2. Average ride distance by vehicle type
-> create view avg_distance_per_vehicle_type as select Vehicle_Type, avg(Ride_Distance) as Avg_Ride_Distance from bookings group by Vehicle_Type;
-   
+```sql
+create view avg_distance_per_vehicle_type as
+select Vehicle_Type, avg(Ride_Distance) as Avg_Ride_Distance
+from bookings
+group by Vehicle_Type;
+```
+
 3. Count of bookings cancelled by customers
-> create view no_cancelled_rides_by_customers as select count(*) from bookings where Booking_Status = 'Canceled by Customer';
-   
+```sql
+create view no_cancelled_rides_by_customers as
+select count(*)
+from bookings
+where Booking_Status = 'Canceled by Customer';
+```
+
 4. Top 5 most frequent customers
-> create view top_5_customers as select Customer_ID,count(Booking_Id) as total_rides from bookings group by Customer_ID order by total_rides desc limit 5;
-   
+```sql
+create view top_5_customers as
+select Customer_ID,count(Booking_Id) as total_rides
+from bookings
+group by Customer_ID
+order by total_rides desc
+limit 5;
+```
+
 5. Cancellations by drivers due to personal or car issues
-> create view cancelled_by_driver_due_to_PnCr_issues as select count(*) from bookings where Canceled_Rides_by_Driver = 'Personal & Car related issue';
+```sql
+create view cancelled_by_driver_due_to_PnCr_issues as
+select count(*)
+from bookings
+where Canceled_Rides_by_Driver = 'Personal & Car related issue';
+```
      
 6. Min/Max driver rating for Prime Sedan
-> create view min_max_rating_prime_sedan as select max(Driver_Ratings) as max_rating, min(Driver_Ratings) as min_rating from bookings where Vehicle_Type = 'Prime Sedan';
+```sql
+create view min_max_rating_prime_sedan as
+select max(Driver_Ratings) as max_rating, min(Driver_Ratings) as min_rating
+from bookings
+where Vehicle_Type = 'Prime Sedan';
+```
     
 7. Retrieve rides with UPI payments
-> create view payment_method_upi as select * from bookings where Payment_Method = 'UPI';
-    
+```sql
+create view payment_method_upi as
+select *
+from bookings
+where Payment_Method = 'UPI';
+```
+
 8. Average customer rating per vehicle type
-> create view vehicle_type_ratings as select Vehicle_Type, round(avg(Customer_Rating),2) as avg_cust_rating_vehicle_type from bookings group by Vehicle_Type;
+```sql
+create view vehicle_type_ratings as
+select Vehicle_Type, round(avg(Customer_Rating),2) as avg_cust_rating_vehicle_type
+from bookings
+group by Vehicle_Type;
+```
     
 9. Total value of successful bookings
-> create view total_successfull_booking_value as select sum(Booking_Value) as total_booking_value from bookings where Booking_Status = 'Success';
+```sql
+create view total_successfull_booking_value as
+select sum(Booking_Value) as total_booking_value
+from bookings
+where Booking_Status = 'Success';
+```
      
 10. Incomplete rides and associated reasons
-> create view incomplete_rides_reason as select  Booking_ID, Incomplete_Rides_Reason from bookings where Incomplete_Rides = 'Yes';
-
+```sql
+create view incomplete_rides_reason as
+select  Booking_ID, Incomplete_Rides_Reason
+from bookings
+where Incomplete_Rides = 'Yes';
+```
 
 ## Business Impact & Insights
 
